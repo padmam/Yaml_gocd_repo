@@ -12,18 +12,11 @@ pipelines:
               tasks:
                - exec: # indicates type of task
                    command: ls
-    pipelines:
-    pipeline2:
-      group: testing
-      materials:
-        upstream:
-            type: dependency
-            pipeline: pipeline1
-            stage: build
-            stages:
-              - build: # name of stage
-                jobs:
-                  build: # name of the job
+        -defaultstage:
+              jobs:
+                defaultjob:
                     tasks:
-                      - exec: # indicates type of task
-                          command: ls              
+                    -exec:
+                      command: ls
+                        -argument: -al
+    
