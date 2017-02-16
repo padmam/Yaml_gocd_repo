@@ -60,4 +60,4 @@ pipelines: # tells plugin that here are pipelines by name
                    arguments:
                     - "VERBOSE=true"
               # shorthand for script-executor plugin
-- script: ./build.sh ci
+               - script: ./build.sh ci
