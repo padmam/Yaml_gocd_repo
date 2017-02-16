@@ -16,7 +16,7 @@ pipelines:
               jobs:
                 defaultjob:
                     tasks:
-                    -exec:
-                      command: ls
-                        -argument: -al
+                      -exec:
+                          command: ls
+                          argument: -al
     
