@@ -18,5 +18,6 @@ pipelines:
                     tasks:
                       -exec:
                           command: ls
-                          argument: -al
+                          argument: 
+                           - "al"
     
