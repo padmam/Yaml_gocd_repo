@@ -14,18 +14,6 @@
                    command: ls
                    arguments:
                    - al
-    "pipeline2":
-     group: rich
-     materials:
-       upstream:
-           pipeline: pipe2
-           stage: build
-     stages:
-        - teststage:
-           jobs:
-            -testjob:
-               tasks:
-               - exec: # indicates type of task
-                 command: ls
+ 
               
     
