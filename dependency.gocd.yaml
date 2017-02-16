@@ -12,6 +12,7 @@ pipelines:
               tasks:
                - exec: # indicates type of task
                    command: ls
+    pipelines:
     pipeline2:
       group: testing
       materials:
