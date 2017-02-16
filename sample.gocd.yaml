@@ -5,11 +5,11 @@ pipelines:
     materials:
       mygit:  # this is the name of material
         # says about type of material and url at once
-        git: https://github.com/padmam/Yaml_gocd_repo.git
+        git: https://github.com/padmam/Gocdtest.git
     stages:
       - build: # name of stage
           jobs:
             build: # name of the job
               tasks:
                - exec: # indicates type of task
-command: ls
+               command: ls
