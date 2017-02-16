@@ -12,7 +12,13 @@ pipelines:
               tasks:
                - exec: # indicates type of task
                    command: ls
-       stages:            
+      pipeline1:
+        group: testing
+        materials:
+          mygit:  # this is the name of material
+          # says about type of material and url at once
+          git: https://github.com/padmam/Gocdtest.git
+        stages:            
         -defaultstage:
               jobs:
                 defaultjob:
