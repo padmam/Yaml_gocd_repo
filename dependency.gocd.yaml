@@ -1,4 +1,5 @@
 pipelines:
+  - pipeline2
   pipeline1:
     group: testing
     materials:
