@@ -1,0 +1,28 @@
+pipelines:
+  pipeline1:
+    group: testing
+    materials:
+      mygit:  # this is the name of material
+        # says about type of material and url at once
+        git: http://my.example.org/mygit.git
+    stages:
+      - build: # name of stage
+          jobs:
+            build: # name of the job
+              tasks:
+               - exec: # indicates type of task
+                   command: ls
+    pipeline2:
+      group: testing
+      materials:
+        upstream:
+            type: dependency
+            pipeline: pipeline1
+            stage: build
+            stages:
+              - build: # name of stage
+                jobs:
+                  build: # name of the job
+                    tasks:
+                      - exec: # indicates type of task
+                          command: ls              
