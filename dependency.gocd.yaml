@@ -13,5 +13,5 @@ pipelines:
                - exec: # indicates type of task
                    command: ls
                    arguments:
-                   - "al"
+                   - al
     
