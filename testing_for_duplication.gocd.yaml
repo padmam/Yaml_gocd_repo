@@ -1,6 +1,6 @@
 # testing_for_duplication.gocd.yaml
 pipelines:
-  testing_for_duplication:
+testing_for_duplication:
     group: testing
     materials:
       mygit:  # this is the name of material
@@ -12,4 +12,4 @@ pipelines:
             defaultJob: # name of the job
               tasks:
                - exec: # indicates type of task
-command: ls
+                 command: ls
