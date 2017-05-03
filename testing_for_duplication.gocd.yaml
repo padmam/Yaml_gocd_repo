@@ -12,4 +12,4 @@ testing_for_duplication:
             defaultJob: # name of the job
               tasks:
                - exec: # indicates type of task
-                 command: ls
+                  command: ls
