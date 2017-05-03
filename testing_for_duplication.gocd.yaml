@@ -1,6 +1,6 @@
 # testing_for_duplication.gocd.yaml
 pipelines:
-testing_for_duplications:
+testing_for_duplication:
     group: testing
     materials:
       mygit:  # this is the name of material
